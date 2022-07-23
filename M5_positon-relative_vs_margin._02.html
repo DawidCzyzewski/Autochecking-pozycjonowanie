@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container-fluid {
+        display: flex;
+        justify-content: space-between;
+      }
+      .container {
+        width: 350px;
+        margin: 0.5rem auto;
+        padding: 0.75rem 0.5rem 0.25rem;
+        border-radius: 1rem;
+        background-color: teal;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 100px;
+        margin: 0 0.5rem 0.5rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background-color: orange;
+        font-size: 18px;
+
+        /* centrujemy tekst */
+        --h: 2rem;
+        height: var(--h);
+        line-height: var(--h);
+        text-align: center;
+      }
+
+      .by-position {
+        background-color: palevioletred;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+        bottom: 2rem;
+        right: 2rem;
+      }
+      .by-margin {
+        background-color: lightskyblue;
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section>
+        <h2>Flex</h2>
+        <div class="container display-flex">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+        </div>
+        <div class="container display-flex">
+          <div class="box">4</div>
+          <div class="box by-margin">margin</div>
+          <div class="box">6</div>
+        </div>
+        <div class="container display-flex">
+          <div class="box">7</div>
+          <div class="box">8</div>
+          <div class="box">9</div>
+        </div>
+      </section>
+      <section>
+        <h2>Flex</h2>
+        <div class="container display-flex">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+        </div>
+        <div class="container display-flex">
+          <div class="box">4</div>
+          <div class="box by-position">relative</div>
+          <div class="box">6</div>
+        </div>
+        <div class="container display-flex">
+          <div class="box">7</div>
+          <div class="box">8</div>
+          <div class="box">9</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
