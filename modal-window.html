@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      body {
+        height: 200vh;
+        background: linear-gradient(hsl(189, 100%, 85%), hsl(224, 75%, 25%));
+        text-align: center;
+      }
+
+      .box {
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        width: 360px;
+        height: 200px;
+        background-color: #fff;
+        cursor: initial;
+        /* Wprowadź właściwość pod tym wierszem */
+        margin: auto;
+      }
+
+      .btn,
+      .box {
+        cursor: pointer;
+      }
+
+      .modal {
+        cursor: not-allowed;
+        /* Zmień kod pod tym wierszem */
+        display: flex;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning"
+      class="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Go to documentation section: "Positioning"
+    </a>
+    <div class="modal">
+      <div class="box">
+        <p>An example of placing a modal window.</p>
+        <button class="btn">Ok</button>
+      </div>
+    </div>
+  </body>
+</html>
